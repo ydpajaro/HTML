@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="eng-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Información del sitio web -->
+    <title>HTML</title>
+    <meta name="description" content="HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web.">
+    <meta name="author" content="ydpajaro">
+    
+    <!-- Icono (Favicon) para la pestaña y la sección de favoritos -->
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/html-5.png" type="image/png">
+    
+    <!-- Etiqueta para especificar el idioma de la página -->
+    <meta http-equiv="Content-Language" content="es">
+    
+    <!-- Estilos CSS u otras referencias -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Scripts JavaScript u otras referencias -->
+    <script src="script.js"></script>
+    <style>
+        body {
+            text-align: left;
+            margin: 20px; /* Agrega márgenes de 20px a todos los lados */
+        }
+        
+        h1 {
+          margin-bottom: 10px; /* Agrega margen inferior de 10px al encabezado h1 */
+        }
+        h2 {
+            color: #333;
+            font-size: 1.2em;
+        }
+        h2 + hr {
+            margin-top: 5px; /* Espacio entre el subtítulo y la línea */
+            border: none;
+            border-top: 0.5px solid #333; /* Estilo de la línea */
+            width: 100%; /* Asegura que la línea ocupe el ancho completo */
+          }
+        
+        p {
+          margin: 0; /* Establece el margen a 0 para eliminar el espacio entre párrafos */
+        }
+        .resaltado {
+            background-color: #f2f2f2; /* Color de fondo gris claro */
+            padding: 2px; /* Agrega un poco de espacio alrededor del texto resaltado */
+        }
+        .espaciado-extra {
+            margin-top: 10px; /* Margen superior mayor para el párrafo específico */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>
+        HTML
+    </h1>
+    <p>
+        <strong>HTML</strong>, siglas en inglés de <em><strong>HyperText Markup Language</strong> Markup Language</em> (‘lenguaje de marcado de hipertexto’), 
+    </p>
+    <p>
+        hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que 
+    </p>
+    <p>
+        sirve de referencia del software que conecta con la elaboración de páginas web en sus
+    </p>
+    <p>
+        diferentes versiones, define una estructura básica y un código (denominado código HTML) para 
+    </p>
+    <p>
+        la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. 
+    </p>
+    <p>
+        Es un estándar a cargo del <em>World Wide Web Consortium </em>(W3C) o Consorcio WWW, 
+    </p>
+    <p>
+        organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre 
+    </p>
+    <p>
+        todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más 
+    </p>
+    <p>
+        importante siendo su invención crucial en la aparición, desarrollo y expansión de la <em>World Wide</em> 
+    </p>
+    <p>
+        <em>Web</em> (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que 
+    </p>
+    <p>
+        todos los navegadores actuales han adoptado.<sup>1</sup>
+    </p>
+    <h2>Primeras especificaciones de HTML</h2>
+    <hr>
+    <p>
+       <em>Tim Berners-Lee</em> (TBL) en 1991<sup>23</sup> describe 18 elementos que incluyen el diseño inicial y 
+    </p>
+    <p>
+        relativamente simple de HTML. Trece de estos elementos todavía existen en HTML 4.<sup>4</sup>
+    </p>
+    <p>
+        Berners-Lee consideraba el HTML una ampliación de <trong>SGML</trong>, pero no fue formalmente 
+    </p>
+    <p>
+        reconocida como tal hasta la publicación a mediados de 1993, por la <em>IETF</em> (en español: Grupo 
+    </p>
+    <p>
+        de Trabajo de Ingeniería de Internet), de una primera proposición para una especificación del 
+    </p>
+    <p>
+        HTML: el borrador del <em>Hypertext Markup Language</em> de Berners-Lee y Dan Connolly, que incluía 
+    </p>
+    <p>
+        una Definición de Tipo de Documento SGML para definir la gramática.<sup>5</sup> El borrador expiró a los 
+    </p>
+    <p>
+        seis meses, pero fue notable por su reconocimiento de la etiqueta propia del navegador <em><strong>Mosaic</strong> </em>
+    </p>
+    <p>
+        usada para insertar imágenes sin cambio de línea, que reflejaba la filosofía del IETF de basar 
+    </p>
+    <p>
+        estándares en prototipos con éxito.<sup>6</sup>De la misma manera, el borrador competidor de Dave 
+    </p>
+    <p>
+        Raggett <em> HTML+ (Hypertext Markup Format)</em> (Formato de Marcaje de Hipertexto), de finales de 
+    </p>
+    <p>
+        1993, sugería estandarizar características ya implementadas, como las tablas.<sup>7</sup>
+    </p>
+    <h2>
+        Elementos
+    </h2>
+    <hr>
+    <p>
+        Los elementos son la estructura básica de HTML. Los elementos tienen dos propiedades 
+    </p>
+    <p>
+        básicas: atributos y contenido. Cada atributo y contenido tiene ciertas restricciones para que se 
+    </p>
+    <p>
+        considere válido al documento HTML. Un elemento generalmente tiene una etiqueta de inicio 
+    </p>
+    <p>
+        &#40;por ejemplo, <span class="resaltado">&#60;nombre-de-elemento&#62</span>&#41;  y una etiqueta de cierre &#40;por ejemplo, <span class="resaltado">&#60;&#47;nombre-de-</span>
+    </p>
+    <p>
+        <span class="resaltado">elemento&#62;</span>&#41;. Los atributos del elemento están contenidos en la etiqueta de inicio y el contenido 
+    </p>
+    <p>
+        está ubicado entre las dos etiquetas &#40;por ejemplo, <span class="resaltado">&#60;nombre-de-elemento </span>
+    </p>
+    <p>
+        <span class="resaltado">atributo="valor"&#62;Contenido&#60;&#47;nombre-de-elemento&#62;&#60;&#47;span>&#41;.</span> Algunos elementos, tales como 
+    </p>
+    <p>
+        <span class="resaltado">&lt;br&gt;</span>, no tienen contenido ni llevan una etiqueta de cierre. Debajo se listan varios tipos de 
+    </p>
+    <p>
+        elementos de marcado usados en HTML.
+    </p>
+    <p class="espaciado-extra">
+        El marcado estructural describe el propósito del texto. Por ejemplo, <span class="resaltado">&lt;h2&gt;Golf&lt;&#47;h2&gt;</span> establece 
+    </p>
+    <p>
+        &#171;Golf&#187; como un encabezamiento de segundo nivel, el cual se mostraría en un navegador de una 
+    </p>
+    <p>
+        manera similar al título &#171;Marcador HTML&#187; al principio de esta sección. El marcado estructural no 
+    </p>
+    <p>
+        define cómo se verá el elemento, pero la mayoría de los navegadores web han estandarizado el 
+    </p>
+    <p>
+        formato de los elementos. Puede aplicarse un formato específico al texto por medio de hojas de 
+    </p>
+    <p>
+        estilo en cascada.
+    </p>
+    <p class="espaciado-extra">
+        El marcado <em>presentacional</em> describe la apariencia del texto, sin importar su función. Por ejemplo, 
+    </p>
+    <p>
+        <span class="resaltado">&lt;b&gt;negrita&lt;&#47;b&gt;</span> indica que los navegadores web visuales deben mostrar el texto en <strong>negrita</strong>, 
+    </p>
+    <p>
+        pero no indica qué deben hacer los navegadores web que muestran el contenido de otra manera 
+    </p>
+    <p>
+        &#40;por ejemplo, los que leen el texto en voz alta&#41;. En el caso de <span class="resaltado">&lt;b&gt;negrita&lt;&#47;b&gt;</span> e 
+    </p>
+    <p>
+        <span class="resaltado">&lt;i&gt;itálica&lt;&#47;i&gt;</span>, existen elementos que se ven de la misma manera pero tienen una 
+    </p>
+    <p>
+        naturaleza más semántica: <span class="resaltado">&lt;strong&gt;énfasis fuerte&lt;/strong&gt; y &lt;em&gt;énfasis&lt;&#47;em&gt;</span>. 
+    </p>
+    <p class="espaciado-extra">
+        Es fácil ver cómo un lector de pantalla debería interpretar estos dos elementos. Sin embargo, 
+    </p>
+    <p>
+        son equivalentes a sus correspondientes elementos presentacionales: un lector de pantalla no 
+    </p>
+    <p>
+        debería decir más fuerte el nombre de un libro, aunque el nombre resalte en <em>itálicas</em> en una 
+    </p>
+    <p>
+        pantalla. La mayoría del marcado presentacional ha sido desechada desde la versión 4.01, en 
+    </p>
+    <p>
+        favor de las hojas de estilo en cascada.
+    </p>
+    <p class="espaciado-extra">
+        El marcado <em>hipertextual</em> se utiliza para enlazar partes del documento con otros documentos o 
+    </p>
+    <p>
+        con otras partes del mismo documento. Para crear un enlace es necesario utilizar la etiqueta de 
+    </p>
+    <p>
+        ancla <span class="resaltado">&lt;a&gt;</span> junto con el atributo <span class="resaltado">href</span>, que establecerá la dirección URL a la que apunta el 
+    </p>
+    <p>
+        enlace. Por ejemplo, un enlace que muestre el texto de la dirección y vaya hacia nuestra 
+    </p>
+    <p>
+        Wikipedia podría ser de la forma <span class="resaltado">&lt;a</span>
+    </p>
+    <p>
+       <span class="resaltado"> href=&#34;https://www.wikipedia.org&#34;&gt;https://www.wikipedia.org&lt;/a&gt;</span>. También se 
+    </p>
+    <h2>
+        Etiquetas HTML básicas
+    </h2>
+    <hr>
+    <ul>
+        <li>    
+            <p>
+                <span class="resaltado">&lt;html&gt;</span>: define el inicio del documento HTML, le indica al navegador que lo que 
+            </p>
+            <p>
+                viene a continuación debe ser interpretado como código HTML. Esto es así de facto, 
+            </p>
+            <p>
+                ya que en teoría lo que define el tipo de documento es el DOCTYPE, que significa la 
+            </p>
+            <p>
+                palabra justo tras DOCTYPE el tag de raíz.
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="resaltado">&lt;link&gt;</span>: para vincular el sitio a hojas de estilo o iconos. Por                 
+            </p>
+            <p>
+                ejemplo:<span class="resaltado">&lt;link rel=&#34;stylesheet&#34; href=&#34;/style.css&#34; </span
+            </p>
+            <p>
+               <span class="resaltado"> type=&#34;text/css&#34;></span>.
+            </p>
+        </li>
+        <li>
+            <p>
+                <span class="resaltado">&lt;style&gt;</style></span>: para colocar el estilo interno de la página; ya sea usando CSS 
+            </p>
+            <p>
+                u otros lenguajes similares. No es necesario colocarlo si se va a vincular 
+            </p>
+            <P>
+                a un archivo externo usando la etiqueta <span class="resaltado">&lt;link&gt;</span>.
+            </P>            
+        </li>
+        <li>
+            <p>
+                <span class="resaltado">&lt;meta&gt;</span>: para metadatos como la autoría o la licencia, incluso para 
+            </p>
+            <p>
+                indicar parámetros http &#40;mediante <span class="resaltado">http-equiv=&#34; &#34;</span>&#41; cuando no se 
+            </p>
+            <p>
+                pueden modificar por no estar disponible la configuración o por 
+            </p>
+            <P>
+                dificultades con server-side scripting.
+            </P>
+        </li>
+    </ul>
+    </body>
+</html>
